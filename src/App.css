@@ -1,31 +1,69 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.App{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-.App h1{
-    color: antiquewhite;
-    margin-top: 2rem;
-  }
 
-input{
-    border: none;
-    height: 100%;
-    margin: 0;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-.box{
+body {
+  background-image: url(./image/ello.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div {
+  max-height: 75vh;
+  overflow-x: hidden;
+  padding: 2rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.475);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  background-clip: padding-box;
+}
+
+.App h1 {
+  color: antiquewhite;
+  margin-top: 2rem;
+}
+
+input {
+  border: none;
+  height: 100%;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1rem;
+}
+.box {
   background-color: white;
   border-radius: 2px;
 }
-.form{
+.form {
   margin: 2rem;
   overflow: hidden;
   height: 100%;
@@ -35,18 +73,18 @@ input{
   justify-content: center;
 }
 
-form{
+form {
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.categories{
+.categories {
   margin-left: 2rem;
   height: 100%;
 }
 
-.categories select{
+.categories select {
   height: 100%;
   font-size: 1rem;
   padding: 1rem;
@@ -55,20 +93,19 @@ form{
   color: rgb(250, 87, 27);
 }
 
-
-.addBtn{
+.addBtn {
   color: rgb(250, 87, 27);
   display: inline-block !important;
   border-radius: 2px;
   background-color: white;
 }
 
-.addBtn:hover{
+.addBtn:hover {
   color: white;
   background-color: rgb(250, 87, 27);
 }
-  
-button{
+
+button {
   border: none;
   padding: 1rem;
   font-size: 1rem;
@@ -77,50 +114,52 @@ button{
   align-items: center;
 }
 
-button:hover{
+button:hover {
   opacity: 0.9;
 }
 
-.todo,.list,.container{
-    width: 100%;
+.todo,
+.list,
+.container {
+  width: 100%;
 }
 
-.todo{
-    width: 100%;
-    background-color: aliceblue;
-    list-style: none;
-    display: flex;
-    margin-bottom: 5px;
-  }
-
-.todo li{
-    flex-grow: 1;
-  }
-  
-  .completed{
-    opacity: 0.7;
-    text-decoration: line-through;
-    transition: all 0.4s ease;
-  }
-  
-  .todo-item{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    font-size: 1rem;
+.todo {
+  width: 100%;
+  background-color: aliceblue;
+  list-style: none;
+  display: flex;
+  margin-bottom: 5px;
 }
 
-.check{
+.todo li {
+  flex-grow: 1;
+}
+
+.completed {
+  opacity: 0.7;
+  text-decoration: line-through;
+  transition: all 0.4s ease;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.check {
   background-color: rgb(3, 174, 3);
   color: white;
 }
 
-.delete{
+.delete {
   background-color: rgb(250, 87, 27);
   color: white;
-} 
+}
 
-.fall{
+.fall {
   transform: translateY(8rem);
   transition: ease 0.4s;
   opacity: 0;

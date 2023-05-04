@@ -56,9 +56,11 @@ function App() {
   return (
     <div className="App">
       <h1>My TODO List</h1>
-      <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}
-        setStatus={setStatus} />
-      <TodoList todos={todos} setTodos={setTodos} filtered={filtered} />
+      <div className="div">
+        <Form todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText}
+          setStatus={setStatus} />
+        <TodoList todos={todos} setTodos={setTodos} filtered={filtered} />
+      </div>
     </div>
   );
 }
